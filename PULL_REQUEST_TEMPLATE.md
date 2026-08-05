@@ -11,4 +11,4 @@
 - [ ] Self-reviewed; comments added where the code isn't obvious
 - [ ] Tests cover the change
 - [ ] Docs updated (README, Confluence) if needed
-- [ ] If this PR adds/changes a dependency: licence checked against the [Open Source Usage Policy](https://ampowr.atlassian.net/wiki/spaces/SD/pages/1011580930), and no new critical/high vulnerability introduced (checked in Dependency-Track)
+- [ ] If this PR adds/changes a dependency: licence checked against the [Open Source Usage Policy](https://ampowr.atlassian.net/wiki/spaces/SD/pages/1011580930), and no new critical/high vulnerability introduced.
