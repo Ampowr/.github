@@ -1,0 +1,28 @@
+name: Security scan
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  dependency-scan:
+    name: Dependency scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: Ampowr/common-actions/dependency-scan@v2.14.0
+        with:
+          policy-token: ${{ secrets.SECURITY_POLICY_READ_TOKEN }}
+
+  secret-scan:
+    name: Secret scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: Ampowr/common-actions/secret-scan@v2.14.0
